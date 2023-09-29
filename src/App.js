@@ -18,25 +18,59 @@ function App() {
   const [AnimeImg, setAnimeImg] = useState(null);
   const [status, setStatus] = useState("completed");
   const [Genres, setGenres] = useState("unknown");
-  const [Country, setCountry] = useState("unknown");
+  const [Country, setCountry] = useState("japan");
   const [Premiered, setPremiered] = useState("unknown");
   const [aired, setAired] = useState("unknown");
   const [Producers, setProducers] = useState("unknown");
   const [Episodes, setEpisodes] = useState("unknown");
   const [Duration, setDuration] = useState("unknown");
+  const [Name, setName] = useState("anime name");
   const [Studios, setStudios] = useState("unknown");
-
+  const [about, setAbout] = useState("xyz...");
   const sweetRein = () => {
     setAnimeImg(sweetReincarnation);
-    setStatus(" ");
-    setGenres(" ");
-    setCountry(" ");
-    setPremiered(" ");
-    setAired(" ");
-    setProducers(" ");
-    setEpisodes(" ");
-    setDuration(" ");
-    setStudios(" ");
+    setAbout     (`Due to his exceptional talents, Pastry stands out as the probable future leader of Morteln, a region in dire need of help. Even  + More`);
+    setName      (" sweet Reincarnation");
+    setAired     ("Jul 04, 2023 to Sep 19, 2023");
+    setStatus    ("Completed");
+    setGenres    ("Action, Fantasy, Slice of Life, Isekai, Magic");
+    setCountry   ("Japan");
+    setPremiered ("Summer 2023");
+    setDuration  ("23 min");
+    setEpisodes  ("12");
+    setStudios   ("SynergySP");
+    setProducers ("Movic, KlockWorx, U-NEXT, MediaNet, Imagin, Crunchyroll, TO Books, CTW");
+  };
+
+  const ayakashi = () => {
+    setAnimeImg(Ayakashi);
+    setAbout     (`Most people are unable to perceive Ayakashi, supernatural beings that pose a threat to humanity as some of them feed on their life energy. In order t... + More`);
+    setName      ("Ayakashi triangle");
+    setAired     ("Jan 10, 2023 to Sep 26, 2023");
+    setStatus    ("Completed");
+    setGenres    ("Action, Comedy, Ecchi, Romance, Shounen, Supernatural");
+    setCountry   ("Japan");
+    setPremiered ("Winter 2023");
+    setDuration  ("23 min");
+    setEpisodes  ("12");
+    setStudios   ("Connect");
+    setProducers ("Shueisha, Aniplex, BS11, Yomiuri Telecasting, Chugai Mining, Marui Group");
+
+    
+  };
+  const aykashi = () => {
+    setAnimeImg(null);
+    setAbout     (` `);
+    setName      (" ");
+    setAired     (" ");
+    setStatus    (" ");
+    setGenres    (" ");
+    setCountry   (" ");
+    setPremiered (" ");
+    setDuration  (" ");
+    setEpisodes  (" ");
+    setStudios   (" ");
+    setProducers ("");
   };
 
   return (
@@ -44,7 +78,7 @@ function App() {
       <Nav />
       <Sidebar />
       <Routes>
-        <Route path="/" element={<Home sweetRein={sweetRein} />} />
+        <Route path="/" element={<Home sweetRein={sweetRein}  ayakashi={ayakashi}/>} />
         <Route
           path="Player"
           element={
@@ -52,6 +86,7 @@ function App() {
               status={status}
               Premiered={Premiered}
               Studios={Studios}
+              Name={Name}
               Genres={Genres}
               Country={Country}
               aired={aired}
@@ -59,6 +94,7 @@ function App() {
               Episodes={Episodes}
               Producers={Producers}
               AnimeImg={AnimeImg}
+              about={about}
             />
           }
         />

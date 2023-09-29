@@ -61,7 +61,7 @@ function RecentlyUpdated(props) {
         </Link>
 
         <Link to="Player">
-          <div className="flex flex-col capitalize bg-[#2F2F2F] shrink-0 w-[13rem]  h-[21.5rem] max-[426px]:w-[11rem] max-[426px]:h-[18.7rem] overflow-hidden rounded-sm hover:scale-105 duration-100 justify-center items-center ">
+          <div onClick={props.ayakashi} className="flex flex-col capitalize bg-[#2F2F2F] shrink-0 w-[13rem]  h-[21.5rem] max-[426px]:w-[11rem] max-[426px]:h-[18.7rem] overflow-hidden rounded-sm hover:scale-105 duration-100 justify-center items-center ">
             <img alt="anime" className=" w-full  h-full " src={Ayakashi} />
             <div className=" flex flex-col  h-fit py-1 w-full px-3 items-center ">
               <div className=" text-[1rem] hover:text-gray-200 lato h-fit capitalize  w-full flex justify-start  ">

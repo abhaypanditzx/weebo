@@ -11,59 +11,57 @@ import dbz from "../assets/animes/Dragon Ball Super Main Visual Reveals 2 New Ch
 function Player(props) {
 
   return (
-    <div className="h-screen max-lg:h-full  w-full ">
+    
 <div className="h-full w-full bg-[#171717] ">
   
-<div className=" max-lg:space-y-5 space-y-0 h-[40rem] max-lg:h-[100%] max-lg:p-10 max-[426px]:h-[100%] max-lg:flex-col flex-row  w-full flex text-white items-center max-[426px]:justify-normal justify-around">
+<div className=" max-lg:space-y-5 space-y-0 h-fit max-lg:h-[100%] max-lg:p-10 max-[426px]:h-[100%] max-lg:flex-col flex-row  w-full flex text-white items-center max-[426px]:justify-normal justify-around">
 {/* ABOUT SERIES */}
-        <div className="bg-[#111111] h-[38rem]  max-[321px]:w-[18rem] max-lg:h-full max-lg:w-[40rem] max-[426px]:w-[20rem]  max-sm:w-[28rem]  w-[20rem]">
-          <div className="w-full p-5">
+        <div className="bg-[#111111]  h-[100%]  max-[321px]:w-[18rem]  max-lg:w-[40rem] max-[426px]:w-[20rem]  max-sm:w-[28rem]  w-[20rem]">
+          <div className="w-full h-fit p-4">
             <img  alt="img"  className="h-[8rem] max-lg:h-[6rem]" src={props.AnimeImg} />
-            <h5 className="capitalize lato text-[1.5rem] my-1">
-              Dragon ball Z
+            <h5 className="capitalize lato max-[426px]:text-[0.8rem] text-[1.5rem] my-1">
+              {props.Name}
             </h5>
-            <h5 className="text-[0.8rem]">
-              Gokuu, who had been leading a peaceful life with his wife and
-              child for five years, has his world turned upside down when an
-              unknown enemy called Raditz suddenly appears. + More
+            <h5 className="text-[0.75rem] max-[426px]:text-[0.6rem]   font-extralight">
+            {props.about}
             </h5>
           </div>
           <div className="w-full  p-5">
             <div>
-              <span className="text-[0.8rem] text-[#A0A0A0]" >Type:</span>
-              <span className="text-[0.9rem] p-1 text-[#fff]">TV</span>
+              <span className=" text-[0.8rem] max-[426px]:text-[0.65rem] text-[#A0A0A0]" >Type:</span>
+              <span className=" max-[426px]:text-[0.65rem] text-[0.9rem] p-1 text-[#fff]">TV</span>
             </div>
             <div>
-              <span className="text-[0.8rem] text-[#A0A0A0]" >Status:</span>
-              <span className="text-[0.9rem] p-1 text-[#fff]">{props.status} </span>
+              <span className=" text-[0.8rem] max-[426px]:text-[0.65rem] text-[#A0A0A0]" >Status:</span>
+              <span className=" max-[426px]:text-[0.65rem] text-[0.9rem] p-1 text-[#fff]">{props.status} </span>
             </div>
             <div>
-              <span className="text-[0.8rem] text-[#A0A0A0]" >Genres:</span>
-              <span className="text-[0.9rem] p-1 text-[#fff]">{props.Genres}</span>
+              <span className=" text-[0.8rem] max-[426px]:text-[0.65rem] text-[#A0A0A0]" >Genres:</span>
+              <span className=" max-[426px]:text-[0.65rem] text-[0.9rem] p-1 text-[#fff]">{props.Genres}</span>
             </div>
             <div>
-              <span className="text-[0.8rem] text-[#A0A0A0]" >Country: </span>
-              <span className="text-[0.9rem] p-1 text-[#fff]">{props.Country}</span>
+              <span className=" text-[0.8rem] max-[426px]:text-[0.65rem] text-[#A0A0A0]" >Country: </span>
+              <span className=" max-[426px]:text-[0.65rem] text-[0.9rem] p-1 text-[#fff]">{props.Country}</span>
             </div>
             <div>
-              <span className="text-[0.8rem] text-[#A0A0A0]" >Premiered:</span> 
-              <span className="text-[0.9rem] p-1 text-[#fff]">{props.Premiered}</span>
+              <span className=" text-[0.8rem] max-[426px]:text-[0.65rem] text-[#A0A0A0]" >Premiered:</span> 
+              <span className=" max-[426px]:text-[0.65rem] text-[0.9rem] p-1 text-[#fff]">{props.Premiered}</span>
             </div>
             <div>
-              <span className="text-[0.8rem] text-[#A0A0A0]" >TV Date aired:</span>
-              <span className="text-[0.9rem] p-1 text-[#fff]">{props.aired}</span>
+              <span className=" text-[0.8rem] max-[426px]:text-[0.65rem] text-[#A0A0A0]" >TV Date aired:</span>
+              <span className=" max-[426px]:text-[0.65rem] text-[0.9rem] p-1 text-[#fff]">{props.aired}</span>
             </div>
             <div>
-              <span className="text-[0.8rem] text-[#A0A0A0]" > Producers:</span>
-              <span className="text-[0.9rem] p-1 text-[#fff]">{props.Producers}</span>
+              <span className=" text-[0.8rem] max-[426px]:text-[0.65rem] text-[#A0A0A0]" > Producers:</span>
+              <span className=" max-[426px]:text-[0.65rem] text-[0.9rem] p-1 text-[#fff]">{props.Producers}</span>
             </div>
             <div>
-              <span className="text-[0.8rem] text-[#A0A0A0]" > Episodes: </span>
-              <span className="text-[0.9rem] p-1 text-[#fff]">{props.Episodes}</span>
+              <span className=" text-[0.8rem] max-[426px]:text-[0.65rem] text-[#A0A0A0]" > Episodes: </span>
+              <span className=" max-[426px]:text-[0.65rem] text-[0.9rem] p-1 text-[#fff]">{props.Episodes}</span>
             </div>
             <div>
-              <span className="text-[0.8rem] text-[#A0A0A0]" >Studios: </span>
-              <span className="text-[0.9rem] p-1 text-[#fff]"> Studios{props}</span>
+              <span className=" text-[0.8rem] max-[426px]:text-[0.65rem] text-[#A0A0A0]" >Studios: </span>
+              <span className=" max-[426px]:text-[0.65rem] text-[0.9rem] p-1 text-[#fff]"> {props.Studios}</span>
             </div>
           </div>
         </div>
@@ -72,26 +70,26 @@ function Player(props) {
           <FaPlay className="w-[4rem] max-lg:h-[3rem] max-lg:w-[3rem] hover:text-gray-200 h-[4rem]  absolute top-[50%]  left-[50%] translate-x-[-50%] translate-y-[-50%]" />
           <div className="flex w-full  items-center bg-[#2F2F2F]   absolute bottom-0 max-lg:h-[3rem] h-[4rem] ">
             <div className="flex w-[50%] max-lg:w-[50%] space-x-5 max-[321px]:space-x-1 max-[426px]:space-x-2 p-5 max-lg:p-2 items-center">
-              <div className="flex w-fit">
-                <p className="text-[#C0C0C0] capitalize  w-max max-[426px]:text-[0.6rem]  text-[0.9rem] font-semibold">
+              <div className="flex w-fit" >
+                <p className="text-[#C0C0C0] capitalize  w-max max-[426px]:text-[0.6rem]  ext-[0.9rem] font-semibold">
                   current episode :
-                </p>
-                <span className="text-white text-[0.9rem] max-[426px]:text-[0.6rem]   ml-2">
+                </p >
+                <span className="text-white  text-[0.9rem] max-[426px]:text-[0.6rem]   ml-2">
                   2
                 </span>
               </div>
               <div className="flex capitalize items-center ">
                 <p>
                   
-                  <FaMicrophoneAlt className="text-[#C90000] max-[426px]:text-[0.7rem]" />
+                  <FaMicrophoneAlt className="text-[#C90000] max-[426px]:text-[0.65rem]" />
                 </p>
                 <span className="text-[0.7rem] max-[426px]:text-[0.6rem] ">
                   
                   dub
                 </span>
               </div>
-              <div className="flex items-center">
-                <p className="text-[#C0C0C0] capitalize max-[426px]:text-[0.6rem] w-max   text-[0.9rem] font-semibold ">
+              <div className="flex items-center" >
+                <p className="text-[#C0C0C0] capitalize max-[426px]:text-[0.6rem] w-max text-[0.9rem] font-semibold ">
                   duration :
                 </p>
                 <span className="text-white text-[0.7rem] max-[426px]:text-[0.6rem]  w-max  mt-[0.2rem] p-1">
@@ -212,12 +210,12 @@ function Player(props) {
       </div>
       {/* SEASONS */}
 <div className="flex  space-x-4 w-full justify-center p-4">
-  <div className=" bg-[#a50000] rounded-lg w-[10rem] max-lg:w-[7rem] max-lg:h-[2.5rem] max-[426px]:w-[4rem] max-[426px]:text-[0.8rem] max-[426px]:h-[1.5rem]  h-[3rem] flex justify-center items-center cursor-pointer inter tracking-wider hover:bg-[#820303] text-white "> season </div>
-  <div className=" bg-[#a50000] rounded-lg w-[10rem] max-lg:w-[7rem] max-lg:h-[2.5rem] max-[426px]:w-[4rem] max-[426px]:text-[0.8rem] max-[426px]:h-[1.5rem]  h-[3rem] flex justify-center items-center cursor-pointer inter tracking-wider hover:bg-[#820303] text-white "> season </div>
-  <div className=" bg-[#a50000] rounded-lg w-[10rem] max-lg:w-[7rem] max-lg:h-[2.5rem] max-[426px]:w-[4rem] max-[426px]:text-[0.8rem] max-[426px]:h-[1.5rem]  h-[3rem] flex justify-center items-center cursor-pointer inter tracking-wider hover:bg-[#820303] text-white "> season </div>
+  <div className=" bg-[#a50000] rounded-lg w-[10rem] max-lg:w-[7rem] max-lg:h-[2.5rem] max-[426px]:w-[4rem] max-[426px]:text-[0.8rem] max-[426px]:text-[0.65rem] max-[426px]:h-[1.5rem]  h-[3rem] flex justify-center items-center cursor-pointer inter tracking-wider hover:bg-[#820303] text-white "> season </div>
+  <div className=" bg-[#a50000] rounded-lg w-[10rem] max-lg:w-[7rem] max-lg:h-[2.5rem] max-[426px]:w-[4rem] max-[426px]:text-[0.8rem] max-[426px]:text-[0.65rem] max-[426px]:h-[1.5rem]  h-[3rem] flex justify-center items-center cursor-pointer inter tracking-wider hover:bg-[#820303] text-white "> season </div>
+  <div className=" bg-[#a50000] rounded-lg w-[10rem] max-lg:w-[7rem] max-lg:h-[2.5rem] max-[426px]:w-[4rem] max-[426px]:text-[0.8rem] max-[426px]:text-[0.65rem] max-[426px]:h-[1.5rem]  h-[3rem] flex justify-center items-center cursor-pointer inter tracking-wider hover:bg-[#820303] text-white "> season </div>
 </div>
 </div>
-    </div>
+
   );
 }
 export default Player;

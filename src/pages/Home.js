@@ -9,9 +9,8 @@ function Home(props) {
     <div className="-mt-14 h-full ">
       
         <Slider/>
-    
       <Trending/>
-      <Recently sweetRein={props.sweetRein}/>
+      <Recently ayakashi={props.ayakashi} sweetRein={props.sweetRein}/>
 
     </div>
   )
