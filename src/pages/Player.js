@@ -63,7 +63,7 @@ function Player(props) {
             </div>
             <div>
               <span className="text-[0.8rem] text-[#A0A0A0]" >Studios: </span>
-              <span className="text-[0.9rem] p-1 text-[#fff]"> Studios{props.}</span>
+              <span className="text-[0.9rem] p-1 text-[#fff]"> Studios{props}</span>
             </div>
           </div>
         </div>
