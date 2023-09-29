@@ -18,7 +18,7 @@ function Player(props) {
 {/* ABOUT SERIES */}
         <div className="bg-[#111111] h-[38rem]  max-[321px]:w-[18rem] max-lg:h-full max-lg:w-[40rem] max-[426px]:w-[20rem]  max-sm:w-[28rem]  w-[20rem]">
           <div className="w-full p-5">
-            <img  alt="img"  className="h-[8rem] max-lg:h-[6rem]" src={props.currentImg} />
+            <img  alt="img"  className="h-[8rem] max-lg:h-[6rem]" src={props.AnimeImg} />
             <h5 className="capitalize lato text-[1.5rem] my-1">
               Dragon ball Z
             </h5>
@@ -35,39 +35,35 @@ function Player(props) {
             </div>
             <div>
               <span className="text-[0.8rem] text-[#A0A0A0]" >Status:</span>
-              <span className="text-[0.9rem] p-1 text-[#fff]">Completed </span>
+              <span className="text-[0.9rem] p-1 text-[#fff]">{props.status} </span>
             </div>
             <div>
               <span className="text-[0.8rem] text-[#A0A0A0]" >Genres:</span>
-              <span className="text-[0.9rem] p-1 text-[#fff]">Action, Adventure, Comedy, Fantasy, Martial Arts, Shounen </span>
+              <span className="text-[0.9rem] p-1 text-[#fff]">{props.Genres}</span>
             </div>
             <div>
               <span className="text-[0.8rem] text-[#A0A0A0]" >Country: </span>
-              <span className="text-[0.9rem] p-1 text-[#fff]">Japan </span>
+              <span className="text-[0.9rem] p-1 text-[#fff]">{props.Country}</span>
             </div>
             <div>
               <span className="text-[0.8rem] text-[#A0A0A0]" >Premiered:</span> 
-              <span className="text-[0.9rem] p-1 text-[#fff]">Spring 1989</span>
+              <span className="text-[0.9rem] p-1 text-[#fff]">{props.Premiered}</span>
             </div>
             <div>
               <span className="text-[0.8rem] text-[#A0A0A0]" >TV Date aired:</span>
-              <span className="text-[0.9rem] p-1 text-[#fff]">Apr 26, 1989 to Jan 31, 1996 </span>
+              <span className="text-[0.9rem] p-1 text-[#fff]">{props.aired}</span>
             </div>
             <div>
               <span className="text-[0.8rem] text-[#A0A0A0]" > Producers:</span>
-              <span className="text-[0.9rem] p-1 text-[#fff]">Fuji TV</span>
+              <span className="text-[0.9rem] p-1 text-[#fff]">{props.Producers}</span>
             </div>
             <div>
               <span className="text-[0.8rem] text-[#A0A0A0]" > Episodes: </span>
-              <span className="text-[0.9rem] p-1 text-[#fff]">291</span>
-            </div>
-            <div>
-              <span className="text-[0.8rem] text-[#A0A0A0]" >Duration: </span> 
-              <span className="text-[0.9rem] p-1 text-[#fff]">24 min</span>
+              <span className="text-[0.9rem] p-1 text-[#fff]">{props.Episodes}</span>
             </div>
             <div>
               <span className="text-[0.8rem] text-[#A0A0A0]" >Studios: </span>
-              <span className="text-[0.9rem] p-1 text-[#fff]"> Toei Animation</span>
+              <span className="text-[0.9rem] p-1 text-[#fff]"> Studios{props.}</span>
             </div>
           </div>
         </div>

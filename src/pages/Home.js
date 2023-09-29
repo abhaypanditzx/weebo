@@ -3,7 +3,7 @@
 import Slider from "../components/Slider"
 import Recently from "../components/Recently_Updated"
 import Trending from "../components/Trending"
-function Home() { 
+function Home(props) { 
 
   return (
     <div className="-mt-14 h-full ">
@@ -11,7 +11,7 @@ function Home() {
         <Slider/>
     
       <Trending/>
-      <Recently/>
+      <Recently sweetRein={props.sweetRein}/>
 
     </div>
   )

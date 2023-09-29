@@ -11,8 +11,7 @@ import darkGathering from "../assets/animes/dark-gathering.jpg";
 import zom from "../assets/animes/zom.jpg";
 import theDUke from "../assets/animes/theDukeOfDeath.jpg";
 
-function RecentlyUpdated() {
-  const [currentImg,setCurrentImg] = useState(null)
+function RecentlyUpdated(props) {
   function left() {
     let elem = document.getElementById("top-airing");
     elem.scrollLeft -= 50;
@@ -21,12 +20,7 @@ function RecentlyUpdated() {
     let elem = document.getElementById("top-airing");
     elem.scrollLeft += 50;
   }
-  const sweetRein = ()=>{
- 
-  setCurrentImg(sweetReincarnation)
-  console.log(sweetReincarnation)
-  }
-
+  
   return (
     <div className="text-[3rem] mt-[7rem] bg-[#171717] items-center justify-center flex flex-col  relative w-full h-[34rem]   text-white">
       <button
@@ -47,7 +41,7 @@ function RecentlyUpdated() {
       >
 
         <Link to="Player">
-          <div onClick={sweetRein} className="flex flex-col capitalize bg-[#2F2F2F] shrink-0 w-[13rem]  h-[21.5rem] max-[426px]:w-[11rem] max-[426px]:h-[18.7rem] overflow-hidden rounded-sm hover:scale-105 duration-100 justify-center items-center ">
+          <div onClick={props.sweetRein} className="flex flex-col capitalize bg-[#2F2F2F] shrink-0 w-[13rem]  h-[21.5rem] max-[426px]:w-[11rem] max-[426px]:h-[18.7rem] overflow-hidden rounded-sm hover:scale-105 duration-100 justify-center items-center ">
             <img
               alt="anime"
               className=" w-full  h-full "
