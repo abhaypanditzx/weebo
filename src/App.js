@@ -9,7 +9,7 @@ import sweetReincarnation from "./assets/animes/SweetReincarnation.jpg";
 import Akuma from "./assets/animes/Akuma-kun.jpg";
 import Synduality from "./assets/animes/synduality.jpg";
 import Ayakashi from "./assets/animes/ayakashi.jpg";
-import blueOrchestra from "./assets/animes/blue-orchestra.jpg";
+import BlueOrchestra from "./assets/animes/blue-orchestra.jpg";
 import DarkGathering from "./assets/animes/dark-gathering.jpg";
 import Zom from "./assets/animes/zom.jpg";
 import TheDUke from "./assets/animes/theDukeOfDeath.jpg";
@@ -101,33 +101,34 @@ function App() {
   };
 
   const blueOrchestra = () => {
-    setAnimeImg(null);
-    setAbout(` `);
-    setName(" ");
-    setAired(" ");
-    setStatus(" ");
-    setGenres(" ");
-    setCountry(" ");
-    setPremiered(" ");
-    setDuration(" ");
-    setEpisodes(" ");
-    setStudios(" ");
-    setProducers(" ");
+    setAnimeImg(BlueOrchestra);
+    setAbout(`As a child, Hajime Aono revered his father, a renowned violinist who inspired him to pursue the same instrument. However, after his parents'
+    + More`);
+    setName(" Blue Orchestra");
+    setAired(" Apr 09, 2023 to ?");
+    setStatus("Releasing ");
+    setGenres("Drama, Music, School, Seinen ");
+    setCountry(" Japan");
+    setPremiered("Spring 2023 ");
+    setDuration(" 25 min");
+    setEpisodes("24 ");
+    setStudios(" Nippon Animation");
+    setProducers("NHK, NHK Enterprises ");
   };
 
   const darkGathering = () => {
-    setAnimeImg(null);
-    setAbout(` `);
-    setName(" ");
-    setAired(" ");
-    setStatus(" ");
-    setGenres(" ");
-    setCountry(" ");
-    setPremiered(" ");
-    setDuration(" ");
-    setEpisodes(" ");
-    setStudios(" ");
-    setProducers(" ");
+    setAnimeImg(DarkGathering);
+    setAbout(`Despite Keitarou Gentouga's strong aversion to ghosts, he inexplicably feels drawn to them, a trait that caused a spiritual injury to a friend two years ago. This injury, coupled with his poor social skills, turned + Mor `);
+    setName(" Dark Gathering");
+    setAired(" Jul 10, 2023 to ?");
+    setStatus(" Releasing");
+    setGenres(" Horror, Shounen, Supernatural");
+    setCountry("Japan ");
+    setPremiered("Summer 2023 ");
+    setDuration(" 23 min");
+    setEpisodes(" 25");
+    setStudios("OLM ");
+    setProducers("Pony Canyon, Sotsu, Kansai Telecasting, NetEase, BS Asahi, CHOCOLATE ");
   };
 
   const zom = () => {
@@ -137,7 +138,9 @@ function App() {
     setName(" Zom 100: Bucket List of the Dead");
     setAired("        Jul 09, 2023 to Oct 15, 2023 ");
     setStatus("        Releasing ");
-    setGenres("         Action, Comedy, Horror, Seinen, Shounen, Supernatural, Suspense");
+    setGenres(
+      "         Action, Comedy, Horror, Seinen, Shounen, Supernatural, Suspense"
+    );
     setCountry("        Japan ");
     setPremiered("        Summer 2023 ");
     setDuration("         24 min");
@@ -146,7 +149,6 @@ function App() {
     setProducers("       Shogakukan-Shueisha Productions, dugout ");
   };
   const Duke = () => {
-
     setAnimeImg(TheDUke);
     setAbout(`    The follow-up installment of Shinigami Bocchan to Kuro Maid's series is its second season.
     + More
@@ -160,7 +162,9 @@ function App() {
     setDuration(" 23 min");
     setEpisodes("12 ");
     setStudios("J.C.Staff ");
-    setProducers("NBCUniversal Entertainment Japan, BS11, Shogakukan, Shogakukan-Shueisha Productions, Yomiuri TV Enterprise, Shogakukan Music & Digital Entertainment, Bandai Spirits ");
+    setProducers(
+      "NBCUniversal Entertainment Japan, BS11, Shogakukan, Shogakukan-Shueisha Productions, Yomiuri TV Enterprise, Shogakukan Music & Digital Entertainment, Bandai Spirits "
+    );
   };
 
   return (
