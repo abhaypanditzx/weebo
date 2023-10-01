@@ -5,9 +5,6 @@ import {
   FaMicrophoneAlt,
   FaPlay,
 } from "react-icons/fa";
-import dbz from "../assets/animes/Dragon Ball Super Main Visual Reveals 2 New Characters.jpeg";
-
-
 function Player(props) {
 
   return (
