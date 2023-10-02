@@ -5,6 +5,7 @@ import {
   FaMicrophoneAlt,
   FaPlay,
 } from "react-icons/fa";
+import Comments from "../Comments";
 function Player(props) {
 
   return (
@@ -63,7 +64,8 @@ function Player(props) {
           </div>
         </div>
 {/* VIDEO Player */}
-        <div className="bg-[#111111] h-[30rem] flex-col  w-[50rem] max-[426px]:h-[15rem] max-[321px]:w-[18rem]  max-sm:w-[28rem] max-lg:h-[25rem] max-lg:w-[40rem]  max-[426px]:w-[20rem] relative  flex">
+<div className="flex flex-col">
+<div className="bg-[#111111] h-[30rem] flex-col  w-[50rem] max-[426px]:h-[15rem] max-[321px]:w-[18rem]  max-sm:w-[28rem] max-lg:h-[25rem] max-lg:w-[40rem]  max-[426px]:w-[20rem] relative  flex">
           <FaPlay className="w-[4rem] max-lg:h-[3rem] max-lg:w-[3rem] hover:text-gray-200 h-[4rem]  absolute top-[50%]  left-[50%] translate-x-[-50%] translate-y-[-50%]" />
           <div className="flex w-full  items-center bg-[#2F2F2F]   absolute bottom-0 max-lg:h-[3rem] h-[4rem] ">
             <div className="flex w-[50%] max-lg:w-[50%] space-x-5 max-[321px]:space-x-1 max-[426px]:space-x-2 p-5 max-lg:p-2 items-center">
@@ -104,6 +106,12 @@ function Player(props) {
             </div>
           </div>
         </div>
+        <div className="flex  space-x-4 w-full justify-center p-4">
+  <div className=" bg-[#a50000] rounded-lg w-[10rem] max-lg:w-[7rem] max-lg:h-[2.5rem] max-[426px]:w-[4rem] max-[426px]:text-[0.8rem] max-[426px]:text-[0.65rem] max-[426px]:h-[1.5rem]  h-[3rem] flex justify-center items-center cursor-pointer inter tracking-wider hover:bg-[#820303] text-white "> season </div>
+  <div className=" bg-[#a50000] rounded-lg w-[10rem] max-lg:w-[7rem] max-lg:h-[2.5rem] max-[426px]:w-[4rem] max-[426px]:text-[0.8rem] max-[426px]:text-[0.65rem] max-[426px]:h-[1.5rem]  h-[3rem] flex justify-center items-center cursor-pointer inter tracking-wider hover:bg-[#820303] text-white "> season </div>
+  <div className=" bg-[#a50000] rounded-lg w-[10rem] max-lg:w-[7rem] max-lg:h-[2.5rem] max-[426px]:w-[4rem] max-[426px]:text-[0.8rem] max-[426px]:text-[0.65rem] max-[426px]:h-[1.5rem]  h-[3rem] flex justify-center items-center cursor-pointer inter tracking-wider hover:bg-[#820303] text-white "> season </div>
+</div>
+</div>
 {/* EPISODES */}
         <div className="bg-[#111111] p-4   h-[30rem]  max-lg:h-[25rem] max-[321px]:w-[18rem] max-sm:w-[28rem] max-[426px]:w-[20rem] max-lg:w-[30rem]  w-[20rem]">
           <div className="parent">
@@ -204,14 +212,13 @@ function Player(props) {
             </span>
           </div>
         </div>
+        
       </div>
       {/* SEASONS */}
-<div className="flex  space-x-4 w-full justify-center p-4">
-  <div className=" bg-[#a50000] rounded-lg w-[10rem] max-lg:w-[7rem] max-lg:h-[2.5rem] max-[426px]:w-[4rem] max-[426px]:text-[0.8rem] max-[426px]:text-[0.65rem] max-[426px]:h-[1.5rem]  h-[3rem] flex justify-center items-center cursor-pointer inter tracking-wider hover:bg-[#820303] text-white "> season </div>
-  <div className=" bg-[#a50000] rounded-lg w-[10rem] max-lg:w-[7rem] max-lg:h-[2.5rem] max-[426px]:w-[4rem] max-[426px]:text-[0.8rem] max-[426px]:text-[0.65rem] max-[426px]:h-[1.5rem]  h-[3rem] flex justify-center items-center cursor-pointer inter tracking-wider hover:bg-[#820303] text-white "> season </div>
-  <div className=" bg-[#a50000] rounded-lg w-[10rem] max-lg:w-[7rem] max-lg:h-[2.5rem] max-[426px]:w-[4rem] max-[426px]:text-[0.8rem] max-[426px]:text-[0.65rem] max-[426px]:h-[1.5rem]  h-[3rem] flex justify-center items-center cursor-pointer inter tracking-wider hover:bg-[#820303] text-white "> season </div>
+
+<Comments/>
 </div>
-</div>
+
 
   );
 }

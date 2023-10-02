@@ -20,7 +20,7 @@ function RecentlyUpdated(props) {
   }
   
   return (
-    <div className="text-[3rem] mt-[7rem] bg-[#171717] items-center justify-center flex flex-col  relative w-full h-[34rem]   text-white">
+    <div className="text-[3rem] mt-[7rem]  bg-[#171717] items-center justify-center flex flex-col  relative w-full h-[34rem] max-[426px]:h-[30rem]   text-white">
       <button
         onClick={left}
         className="absolute text-sm left-0 bg-[#2f2f2f] h-[4rem] w-[2rem] z-50 max-sm:w-[1.5rem] translate-y-[-50%] top-[50%] "
@@ -28,7 +28,7 @@ function RecentlyUpdated(props) {
         <FaChevronLeft className="text-3xl max-[426px]:text-xl" />
       </button>
       {/* HEADING */}
-      <div className="w-full  h-[5rem] absolute top-0 flex items-center text-[#C90000] text-[1.9rem] px-5 inter font-bold">
+      <div className="w-full max-[426px]:text-[1.5rem] h-[5rem]  absolute top-0 flex items-center text-[#C90000] text-[1.9rem] px-5 inter font-bold">
         Latest Episode
       </div>
 
@@ -49,11 +49,11 @@ function RecentlyUpdated(props) {
               <div className=" text-[1rem] hover:text-gray-200 lato h-fit capitalize  w-full flex justify-start  ">
                 sweet Reincarnation
               </div>
-              <p className="flex space-x-3 w-full  items-center text-gray-300 text-[0.8rem]">
+              <div className="flex space-x-3 w-full  items-center text-gray-300 text-[0.8rem]">
                 <span>TV </span>
                 <div className="h-[0.6rem] bg-gray-400 rounded-full w-[0.6rem]"></div>
                 <span>jul 4 ,2023</span>
-              </p>
+              </div>
             </div>
           </div>
         </Link>
@@ -65,11 +65,11 @@ function RecentlyUpdated(props) {
               <div className=" text-[1rem] hover:text-gray-200 lato h-fit capitalize  w-full flex justify-start  ">
                 Ayakashi Triangle
               </div>
-              <p className="flex space-x-3 w-full  items-center text-gray-300 text-[0.8rem]">
+              <div className="flex space-x-3 w-full  items-center text-gray-300 text-[0.8rem]">
                 <span>TV </span>
                 <div className="h-[0.6rem] bg-gray-400 rounded-full w-[0.6rem]"></div>
                 <span>jan 10 ,2023</span>
-              </p>
+              </div>
             </div>
           </div>
         </Link>
@@ -81,11 +81,11 @@ function RecentlyUpdated(props) {
               <div className=" text-[1rem] hover:text-gray-200 lato h-fit capitalize  w-full flex justify-start  ">
                 Akuma-kun
               </div>
-              <p className="flex space-x-3 w-full  items-center text-gray-300 text-[0.8rem]">
+              <div className="flex space-x-3 w-full  items-center text-gray-300 text-[0.8rem]">
                 <span>TV </span>
                 <div className="h-[0.6rem] bg-gray-400 rounded-full w-[0.6rem]"></div>
                 <span>apr 15 ,1989</span>
-              </p>
+              </div>
             </div>
           </div>
         </Link>
@@ -97,11 +97,11 @@ function RecentlyUpdated(props) {
               <div className=" text-[1rem] hover:text-gray-200 lato h-fit capitalize  w-full flex justify-start  ">
                 Zom 100: Bucket List ...
               </div>
-              <p className="flex space-x-3 w-full  items-center text-gray-300 text-[0.8rem]">
+              <div className="flex space-x-3 w-full  items-center text-gray-300 text-[0.8rem]">
                 <span>TV </span>
                 <div className="h-[0.6rem] bg-gray-400 rounded-full w-[0.6rem]"></div>
                 <span>jul 9 ,2023</span>
-              </p>
+              </div>
             </div>
           </div>
         </Link>
@@ -113,11 +113,11 @@ function RecentlyUpdated(props) {
               <div className=" text-[1rem] hover:text-gray-200 lato h-fit capitalize  w-full flex justify-start  ">
                 synduality noir
               </div>
-              <p className="flex space-x-3 w-full  items-center text-gray-300 text-[0.8rem]">
+              <div className="flex space-x-3 w-full  items-center text-gray-300 text-[0.8rem]">
                 <span>TV </span>
                 <div className="h-[0.6rem] bg-gray-400 rounded-full w-[0.6rem]"></div>
                 <span>jul 11 ,2023</span>
-              </p>
+              </div>
             </div>
           </div>
         </Link>
@@ -129,11 +129,11 @@ function RecentlyUpdated(props) {
               <div className=" text-[1rem] hover:text-gray-200 lato h-fit capitalize  w-full flex justify-start  ">
                 dark gathering
               </div>
-              <p className="flex space-x-3 w-full  items-center text-gray-300 text-[0.8rem]">
+              <div className="flex space-x-3 w-full  items-center text-gray-300 text-[0.8rem]">
                 <span>TV </span>
                 <div className="h-[0.6rem] bg-gray-400 rounded-full w-[0.6rem]"></div>
                 <span>jul 08 ,2023</span>
-              </p>
+              </div>
             </div>
           </div>
         </Link>
@@ -145,11 +145,11 @@ function RecentlyUpdated(props) {
               <div className=" text-[1rem] hover:text-gray-200 lato h-fit capitalize  w-full flex justify-start  ">
                 blue orchestra
               </div>
-              <p className="flex space-x-3 w-full  items-center text-gray-300 text-[0.8rem]">
+              <div className="flex space-x-3 w-full  items-center text-gray-300 text-[0.8rem]">
                 <span>TV </span>
                 <div className="h-[0.6rem] bg-gray-400 rounded-full w-[0.6rem]"></div>
                 <span>apr 09 ,2023</span>
-              </p>
+              </div>
             </div>
           </div>
         </Link>
@@ -161,11 +161,11 @@ function RecentlyUpdated(props) {
               <div className=" text-[1rem] hover:text-gray-200 lato h-fit capitalize  w-full flex justify-start  ">
                 The Duke of Death ...
               </div>
-              <p className="flex space-x-3 w-full  items-center text-gray-300 text-[0.8rem]">
+              <div className="flex space-x-3 w-full  items-center text-gray-300 text-[0.8rem]">
                 <span>TV </span>
                 <div className="h-[0.6rem] bg-gray-400 rounded-full w-[0.6rem]"></div>
                 <span>jul 08 ,2023</span>
-              </p>
+              </div>
             </div>
           </div>
         </Link>

@@ -20,14 +20,14 @@ function Trending() {
   }
 
   return (
-    <div className="text-[3rem] mt-[7rem] bg-[#171717] items-center justify-center flex flex-col  relative w-full h-[34rem]   text-white">
+    <div className="text-[3rem] mt-[7rem] max-[426px]:h-[30rem] bg-[#171717] items-center justify-center flex flex-col  relative w-full h-[34rem]   text-white">
       <button
         onClick={left}
         className="absolute text-sm left-0 bg-[#2f2f2f] h-[4rem] w-[2rem] max-sm:w-[1.5rem] translate-y-[-50%] top-[50%] "
       >
         <FaChevronLeft className="text-3xl max-[426px]:text-xl" />
       </button>
-      <div className="w-full  h-[5rem] absolute top-0 flex items-center text-[#C90000] text-[1.9rem] px-5 inter font-bold">
+      <div className="w-full  h-[5rem] absolute top-0 max-[426px]:text-[1.5rem] flex items-center text-[#C90000] text-[1.9rem] px-5 inter font-bold">
         Trending
       </div>
       <div
