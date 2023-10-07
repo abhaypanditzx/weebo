@@ -1,9 +1,7 @@
-import { useEffect, useState } from "react";
 import Hunter from "../assets/animes/hunterXhunter.jpeg";
 import Mushoku from "../assets/animes/Mushoku-Tensei.jpg";
 import sweetReincarnation from "../assets/animes/SweetReincarnation.jpg";
 import JUJUTSU from "../assets/animes/JUJUTSU_KAISEN_Season_2.jpg";
-import JUJUTSU1 from "../assets/animes/JUJUTSU_KAISEN_Season_1.jpg";
 import bleach from "../assets/animes/BLEACH.jpg";
 import one_piece from "../assets/animes/one_piece.jpg";
 import am_i_strongest from "../assets/animes/am_i_strongest.jpg";
@@ -20,7 +18,7 @@ function Trending() {
   }
 
   return (
-    <div className="text-[3rem] mt-[7rem] max-[426px]:h-[30rem] bg-[#171717] items-center justify-center flex flex-col  relative w-full h-[34rem]   text-white">
+    <div className="text-[3rem] mt-[2rem] max-[426px]:h-[30rem] bg-[#171717] items-center justify-center flex flex-col  relative w-full h-[34rem]   text-white">
       <button
         onClick={left}
         className="absolute text-sm left-0 bg-[#2f2f2f] h-[4rem] w-[2rem] max-sm:w-[1.5rem] translate-y-[-50%] top-[50%] "

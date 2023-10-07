@@ -13,7 +13,11 @@ import BlueOrchestra from "./assets/animes/blue-orchestra.jpg";
 import DarkGathering from "./assets/animes/dark-gathering.jpg";
 import Zom from "./assets/animes/zom.jpg";
 import TheDUke from "./assets/animes/theDukeOfDeath.jpg";
-
+import Footer from "./components/Footer";
+import TrendingPage from "./pages/TrendingPage";
+import Ova from "./pages/Ova";
+import Ona from "./pages/Ona";
+import TVseries from "./pages/TVseries";
 function App() {
   const [AnimeImg, setAnimeImg] = useState(null);
   const [status, setStatus] = useState("completed");
@@ -168,14 +172,14 @@ function App() {
   };
 
   return (
-    <div className=" h-full w-full bg-[#030909]">
+    <div className=" h-full w-full  bg-[#030909]">
       <Nav />
       <Sidebar />
       <Routes>
         <Route
           path="/"
           element={
-            <Home
+            <Home path="/"
               sweetRein={sweetRein}
               akuma={akuma}
               Duke={Duke}
@@ -207,7 +211,12 @@ function App() {
           }
         />
         <Route path="Movies" element={<Movies />} />
+        <Route path="TrendingPage" element={<TrendingPage />} />
+        <Route path="Ova" element={<Ova/>} />
+        <Route path="Tvseries" element={<TVseries />} />
+        <Route path="Ona" element={<Ona />} />
       </Routes>
+      <Footer/>
     </div>
   );
 }

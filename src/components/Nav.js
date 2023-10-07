@@ -15,7 +15,7 @@ function Nav() {
 
   }
   return (
-    <div className="w-full flex z-50 h-[3.5rem] sticky top-0  items-center bg-[#00000039]">
+    <div className="w-full flex z-50 h-[3.5rem] sticky top-0 left-0  items-center bg-[#00000039]">
       <div className="w-full p-1">
         <RxHamburgerMenu onClick={func} id="hamburger-icon" className="w-9 hover:text-gray-200 cursor-pointer block text-white h-9"/>
         

@@ -1,4 +1,4 @@
-import { FaChevronLeft, FaChevronRight, FaCircle } from "react-icons/fa";
+import { FaChevronLeft, FaChevronRight} from "react-icons/fa";
 import { Link } from "react-router-dom";
 import sweetReincarnation from "../assets/animes/SweetReincarnation.jpg";
 import Akuma from "../assets/animes/Akuma-kun.jpg";
@@ -20,10 +20,10 @@ function RecentlyUpdated(props) {
   }
   
   return (
-    <div className="text-[3rem] mt-[7rem]  bg-[#171717] items-center justify-center flex flex-col  relative w-full h-[34rem] max-[426px]:h-[30rem]   text-white">
+    <div className="text-[3rem] mt-[2rem]  bg-[#171717] items-center justify-center flex flex-col  relative w-full h-[34rem] max-[426px]:h-[30rem]   text-white">
       <button
         onClick={left}
-        className="absolute text-sm left-0 bg-[#2f2f2f] h-[4rem] w-[2rem] z-50 max-sm:w-[1.5rem] translate-y-[-50%] top-[50%] "
+        className="absolute text-sm left-0 bg-[#2f2f2f] h-[4rem] w-[2rem] z-40 max-sm:w-[1.5rem] translate-y-[-50%] top-[50%] "
       >
         <FaChevronLeft className="text-3xl max-[426px]:text-xl" />
       </button>
