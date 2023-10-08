@@ -32,7 +32,7 @@ function Trending() {
         id="trending"
         className=" overflow-x-scroll scroll-none h-full w-full flex items-center px-5  space-x-10  "
       >
-        <div className="flex flex-col capitalize bg-[#2F2F2F] shrink-0 w-[13rem]  h-[21.5rem] max-[426px]:w-[11rem] max-[426px]:h-[18.7rem] overflow-hidden rounded-sm hover:scale-105 duration-100 justify-center items-center">
+        <div onClick={()=>{alert("this section is not working try below one!")}} className="flex flex-col capitalize bg-[#2F2F2F] shrink-0 w-[13rem]  h-[21.5rem] max-[426px]:w-[11rem] max-[426px]:h-[18.7rem] overflow-hidden rounded-sm hover:scale-105 duration-100 justify-center items-center">
           <img
             alt="anime"
             className=" w-full object-cover  h-full "
@@ -46,7 +46,7 @@ function Trending() {
           </div>
         </div>
 
-        <div className="flex flex-col capitalize bg-[#2F2F2F] shrink-0 w-[13rem]  h-[21.5rem] max-[426px]:w-[11rem] max-[426px]:h-[18.7rem] overflow-hidden rounded-sm hover:scale-105 duration-100 justify-center items-center ">
+        <div onClick={()=>{alert("this section is not working try below one!")}} className="flex flex-col capitalize bg-[#2F2F2F] shrink-0 w-[13rem]  h-[21.5rem] max-[426px]:w-[11rem] max-[426px]:h-[18.7rem] overflow-hidden rounded-sm hover:scale-105 duration-100 justify-center items-center ">
           <img
             alt="anime"
             className=" w-full object-cover  h-full "
@@ -60,7 +60,7 @@ function Trending() {
           </div>
         </div>
 
-        <div className="flex flex-col capitalize bg-[#2F2F2F] shrink-0 w-[13rem]  h-[21.5rem] max-[426px]:w-[11rem] max-[426px]:h-[18.7rem] overflow-hidden rounded-sm hover:scale-105 duration-100 justify-center items-center ">
+        <div onClick={()=>{alert("this section is not working try below one!")}} className="flex flex-col capitalize bg-[#2F2F2F] shrink-0 w-[13rem]  h-[21.5rem] max-[426px]:w-[11rem] max-[426px]:h-[18.7rem] overflow-hidden rounded-sm hover:scale-105 duration-100 justify-center items-center ">
           <img
             alt="anime"
             className=" w-full object-cover  h-full "
@@ -74,7 +74,7 @@ function Trending() {
           </div>
         </div>
 
-        <div className="flex flex-col capitalize bg-[#2F2F2F] shrink-0 w-[13rem]  h-[21.5rem] max-[426px]:w-[11rem] max-[426px]:h-[18.7rem] overflow-hidden rounded-sm hover:scale-105 duration-100 justify-center items-center ">
+        <div onClick={()=>{alert("this section is not working try below one!")}} className="flex flex-col capitalize bg-[#2F2F2F] shrink-0 w-[13rem]  h-[21.5rem] max-[426px]:w-[11rem] max-[426px]:h-[18.7rem] overflow-hidden rounded-sm hover:scale-105 duration-100 justify-center items-center ">
           <img
             alt="anime"
             className=" w-full object-cover  h-full "
@@ -88,7 +88,7 @@ function Trending() {
           </div>
         </div>
 
-        <div className="flex flex-col capitalize bg-[#2F2F2F] shrink-0 w-[13rem]  h-[21.5rem] max-[426px]:w-[11rem] max-[426px]:h-[18.7rem] overflow-hidden rounded-sm hover:scale-105 duration-100 justify-center items-center">
+        <div onClick={()=>{alert("this section is not working try below one!")}} className="flex flex-col capitalize bg-[#2F2F2F] shrink-0 w-[13rem]  h-[21.5rem] max-[426px]:w-[11rem] max-[426px]:h-[18.7rem] overflow-hidden rounded-sm hover:scale-105 duration-100 justify-center items-center">
           <img
             alt="anime"
             className=" w-full object-cover  h-full "
@@ -102,7 +102,7 @@ function Trending() {
           </div>
         </div>
 
-        <div className="flex flex-col capitalize bg-[#2F2F2F] shrink-0 w-[13rem]  h-[21.5rem] max-[426px]:w-[11rem] max-[426px]:h-[18.7rem] overflow-hidden rounded-sm hover:scale-105 duration-100 justify-center items-center">
+        <div onClick={()=>{alert("this section is not working try below one!")}} className="flex flex-col capitalize bg-[#2F2F2F] shrink-0 w-[13rem]  h-[21.5rem] max-[426px]:w-[11rem] max-[426px]:h-[18.7rem] overflow-hidden rounded-sm hover:scale-105 duration-100 justify-center items-center">
           <img
             alt="anime"
             className=" w-full object-cover  h-full "
@@ -116,7 +116,7 @@ function Trending() {
           </div>
         </div>
 
-        <div className="flex flex-col capitalize bg-[#2F2F2F] shrink-0 w-[13rem]  h-[21.5rem] max-[426px]:w-[11rem] max-[426px]:h-[18.7rem] overflow-hidden rounded-sm hover:scale-105 duration-100 justify-center items-center">
+        <div onClick={()=>{alert("this section is not working try below one!")}} className="flex flex-col capitalize bg-[#2F2F2F] shrink-0 w-[13rem]  h-[21.5rem] max-[426px]:w-[11rem] max-[426px]:h-[18.7rem] overflow-hidden rounded-sm hover:scale-105 duration-100 justify-center items-center">
           <img
             alt="anime"
             className=" w-full object-cover  h-full "
@@ -130,7 +130,7 @@ function Trending() {
           </div>
         </div>
 
-        <div className="flex flex-col capitalize bg-[#2F2F2F] shrink-0 w-[13rem]  h-[21.5rem] max-[426px]:w-[11rem] max-[426px]:h-[18.7rem] overflow-hidden rounded-sm hover:scale-105 duration-100 justify-center items-center">
+        <div onClick={()=>{alert("this section is not working try below one!")}} className="flex flex-col capitalize bg-[#2F2F2F] shrink-0 w-[13rem]  h-[21.5rem] max-[426px]:w-[11rem] max-[426px]:h-[18.7rem] overflow-hidden rounded-sm hover:scale-105 duration-100 justify-center items-center">
           <img
             alt="anime"
             className=" w-full object-cover  h-full "

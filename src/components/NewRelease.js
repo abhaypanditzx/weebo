@@ -5,10 +5,10 @@ function NewRelease() {
   return (
 
     <div className=" bg-[#272727] max-[321px]:w-[17.5rem]  text-white  w-[20rem] max-[376px]:w-[21rem]  max-[321px]:h-fit relative max-[426px]:w-[20rem] h-fit">
-             <div className='h-fit w-full text-[#d70d0d] drop-shadow-sm capitalize text-[1.4rem] bg-[#38393d] py-3 flex justify-start px-5 items-center lato'>
+             <div className='h-fit w-full text-[#d70d0d] drop-shadow-sm capitalize text-[1.4rem] bg-[#2f2f2f] py-3 flex justify-start px-5 items-center lato'>
            new Release
         </div>
-    <div className="w-full h-[5rem] border-opacity-50  flex items-center p-4 border-b-[2px]  border-b-gray-400">
+    <div className="w-full h-[5rem] border-opacity-50  flex items-center p-4 border-b-[2px]  border-b-[#343438]">
       <div className="h-[3rem] w-[3rem]  rounded-sm overflow-hidden">
         <img
           alt="anime-related-img"
@@ -23,7 +23,7 @@ function NewRelease() {
       </div>
     </div>
 
-    <div className="w-full h-[5rem] border-opacity-50  flex items-center p-4 border-b-[2px]  border-b-gray-400">
+    <div className="w-full h-[5rem] border-opacity-50  flex items-center p-4 border-b-[2px]  border-b-[#343438]">
       <div className="h-[3rem] w-[3rem]  rounded-sm overflow-hidden">
         <img
           alt="anime-related-img"
@@ -38,7 +38,7 @@ function NewRelease() {
       </div>
     </div>
 
-    <div className="w-full h-[5rem] border-opacity-50  flex items-center p-4 border-b-[2px]  border-b-gray-400">
+    <div className="w-full h-[5rem] border-opacity-50  flex items-center p-4 border-b-[2px]  border-b-[#343438]">
       <div className="h-[3rem] w-[3rem]  rounded-sm overflow-hidden">
         <img
           alt="anime-related-img"
@@ -53,7 +53,7 @@ function NewRelease() {
       </div>
     </div>
 
-    <div className="w-full h-[5rem] border-opacity-50  flex items-center p-4 border-b-[2px]  border-b-gray-400">
+    <div className="w-full h-[5rem] border-opacity-50  flex items-center p-4 border-b-[2px]  border-b-[#343438]">
       <div className="h-[3rem] w-[3rem]  rounded-sm overflow-hidden">
         <img
           alt="anime-related-img"
