@@ -46,7 +46,7 @@ function RecentlyUpdated(props) {
               src={sweetReincarnation}
             />
             <div className=" flex flex-col  h-fit py-1 w-full px-3 items-center ">
-              <div className=" text-[1rem] hover:text-gray-200 lato h-fit capitalize  w-full flex justify-start  ">
+              <div className=" text-[1rem] hover:text-gray-200 lato h-fit capitalize  max-[426px]:text-[0.9rem] w-full flex justify-start  ">
                 sweet Reincarnation
               </div>
               <div className="flex space-x-3 w-full  items-center text-gray-300 text-[0.8rem]">
@@ -62,7 +62,7 @@ function RecentlyUpdated(props) {
           <div onClick={props.ayakashi} className="flex flex-col capitalize bg-[#2F2F2F] shrink-0 w-[13rem]  h-[21.5rem] max-[426px]:w-[11rem] max-[426px]:h-[18.7rem] overflow-hidden rounded-sm hover:scale-[102%] duration-100 justify-center items-center ">
             <img alt="anime" className=" w-full  h-full " src={Ayakashi} />
             <div className=" flex flex-col  h-fit py-1 w-full px-3 items-center ">
-              <div className=" text-[1rem] hover:text-gray-200 lato h-fit capitalize  w-full flex justify-start  ">
+              <div className=" text-[1rem] hover:text-gray-200 lato h-fit capitalize  max-[426px]:text-[0.9rem] w-full flex justify-start  ">
                 Ayakashi Triangle
               </div>
               <div className="flex space-x-3 w-full  items-center text-gray-300 text-[0.8rem]">
@@ -78,7 +78,7 @@ function RecentlyUpdated(props) {
           <div onClick={props.akuma} className="flex flex-col capitalize bg-[#2F2F2F] shrink-0 w-[13rem]  h-[21.5rem] max-[426px]:w-[11rem] max-[426px]:h-[18.7rem] overflow-hidden rounded-sm hover:scale-[102%] duration-100 justify-center items-center ">
             <img alt="anime" className=" w-full  h-full " src={Akuma} />
             <div className=" flex flex-col  h-fit py-1 w-full px-3 items-center ">
-              <div className=" text-[1rem] hover:text-gray-200 lato h-fit capitalize  w-full flex justify-start  ">
+              <div className=" text-[1rem] hover:text-gray-200 lato h-fit capitalize  max-[426px]:text-[0.9rem] w-full flex justify-start  ">
                 Akuma-kun
               </div>
               <div className="flex space-x-3 w-full  items-center text-gray-300 text-[0.8rem]">
@@ -94,7 +94,7 @@ function RecentlyUpdated(props) {
           <div  onClick={props.zom} className="flex flex-col capitalize bg-[#2F2F2F] shrink-0 w-[13rem]  h-[21.5rem] max-[426px]:w-[11rem] max-[426px]:h-[18.7rem] overflow-hidden rounded-sm hover:scale-[102%] duration-100 justify-center items-center ">
             <img alt="anime" className=" w-full  h-full " src={zom} />
             <div className=" flex flex-col  h-fit py-1 w-full px-3 items-center ">
-              <div className=" text-[1rem] hover:text-gray-200 lato h-fit capitalize  w-full flex justify-start  ">
+              <div className=" text-[1rem] hover:text-gray-200 lato h-fit capitalize  max-[426px]:text-[0.9rem] w-full flex justify-start  ">
                 Zom 100: Bucket List ...
               </div>
               <div className="flex space-x-3 w-full  items-center text-gray-300 text-[0.8rem]">
@@ -110,7 +110,7 @@ function RecentlyUpdated(props) {
           <div  onClick={props.synduality} className="flex flex-col capitalize bg-[#2F2F2F] shrink-0 w-[13rem]  h-[21.5rem] max-[426px]:w-[11rem] max-[426px]:h-[18.7rem] overflow-hidden rounded-sm hover:scale-[102%] duration-100 justify-center items-center ">
             <img alt="anime" className=" w-full  h-full " src={synduality} />
             <div className=" flex flex-col  h-fit py-1 w-full px-3 items-center ">
-              <div className=" text-[1rem] hover:text-gray-200 lato h-fit capitalize  w-full flex justify-start  ">
+              <div className=" text-[1rem] hover:text-gray-200 lato h-fit capitalize  max-[426px]:text-[0.9rem] w-full flex justify-start  ">
                 synduality noir
               </div>
               <div className="flex space-x-3 w-full  items-center text-gray-300 text-[0.8rem]">
@@ -126,7 +126,7 @@ function RecentlyUpdated(props) {
           <div  onClick={props.darkGathering} className="flex flex-col capitalize bg-[#2F2F2F] shrink-0 w-[13rem]  h-[21.5rem] max-[426px]:w-[11rem] max-[426px]:h-[18.7rem] overflow-hidden rounded-sm hover:scale-[102%] duration-100 justify-center items-center ">
             <img alt="anime" className=" w-full  h-full " src={darkGathering} />
             <div className=" flex flex-col  h-fit py-1 w-full px-3 items-center ">
-              <div className=" text-[1rem] hover:text-gray-200 lato h-fit capitalize  w-full flex justify-start  ">
+              <div className=" text-[1rem] hover:text-gray-200 lato h-fit capitalize  max-[426px]:text-[0.9rem] w-full flex justify-start  ">
                 dark gathering
               </div>
               <div className="flex space-x-3 w-full  items-center text-gray-300 text-[0.8rem]">
@@ -142,7 +142,7 @@ function RecentlyUpdated(props) {
           <div onClick={props.blueOrchestra} className="flex flex-col capitalize bg-[#2F2F2F] shrink-0 w-[13rem]  h-[21.5rem] max-[426px]:w-[11rem] max-[426px]:h-[18.7rem] overflow-hidden rounded-sm hover:scale-[102%] duration-100 justify-center items-center ">
             <img alt="anime" className=" w-full  h-full " src={blueOrchestra} />
             <div className=" flex flex-col  h-fit py-1 w-full px-3 items-center ">
-              <div className=" text-[1rem] hover:text-gray-200 lato h-fit capitalize  w-full flex justify-start  ">
+              <div className=" text-[1rem] hover:text-gray-200 lato h-fit capitalize  max-[426px]:text-[0.9rem] w-full flex justify-start  ">
                 blue orchestra
               </div>
               <div className="flex space-x-3 w-full  items-center text-gray-300 text-[0.8rem]">
@@ -158,7 +158,7 @@ function RecentlyUpdated(props) {
           <div  onClick={props.Duke} className="flex flex-col capitalize bg-[#2F2F2F] shrink-0 w-[13rem]  h-[21.5rem] max-[426px]:w-[11rem] max-[426px]:h-[18.7rem] overflow-hidden rounded-sm hover:scale-[102%] duration-100 justify-center items-center ">
             <img alt="anime" className=" w-full  h-full " src={theDUke} />
             <div className=" flex flex-col  h-fit py-1 w-full px-3 items-center ">
-              <div className=" text-[1rem] hover:text-gray-200 lato h-fit capitalize  w-full flex justify-start  ">
+              <div className=" text-[1rem] hover:text-gray-200 lato h-fit capitalize  max-[426px]:text-[0.9rem] w-full flex justify-start  ">
                 The Duke of Death ...
               </div>
               <div className="flex space-x-3 w-full  items-center text-gray-300 text-[0.8rem]">

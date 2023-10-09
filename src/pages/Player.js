@@ -4,11 +4,27 @@ import {
   FaForward,
   FaMicrophoneAlt,
   FaPlay,
+  FaPause
 } from "react-icons/fa";
 import Comments from "../components/Comments";
 import RelatedAnime from "../components/RelatedAnime";
-function Player(props) {
+import { useState } from "react";
 
+function Player(props) {
+const handelOnPlay =()=>{
+   let play =  document.getElementById("play");
+   let pause = document.getElementById("pause");
+   pause.style.display = "block"
+   play.style.display = "none"
+   
+}
+const handelOnPause =()=>{
+  let play =  document.getElementById("play");
+  let pause = document.getElementById("pause");
+  pause.style.display = "none"
+  play.style.display = "block"
+
+}
   return (
     
 <div className="h-full space-y-10 w-full    ">
@@ -66,7 +82,10 @@ function Player(props) {
 {/* VIDEO Player */}
 
 <div className="bg-[#111111] h-[30rem] flex-col  w-[50rem] max-[426px]:h-[15rem] max-[321px]:w-[18rem]  max-sm:w-[28rem] max-lg:h-[25rem] max-lg:w-[40rem]  max-[426px]:w-[20rem] relative  flex">
-          <FaPlay className="w-[4rem] max-lg:h-[3rem] max-lg:w-[3rem] hover:text-gray-200 h-[4rem]  absolute top-[50%]  left-[50%] translate-x-[-50%] translate-y-[-50%]" />
+          <FaPlay  onClick={handelOnPlay} id="play"  className="w-[4rem] cursor-pointer max-lg:h-[3rem] max-lg:w-[3rem] hover:text-gray-200 h-[4rem]  absolute top-[50%]  left-[50%] translate-x-[-50%] translate-y-[-50%]"/>
+          <FaPause onClick={handelOnPause} id="pause" className="w-[4rem] cursor-pointer hidden max-lg:h-[3rem] max-lg:w-[3rem] hover:text-gray-200 h-[4rem]  absolute top-[50%]  left-[50%] translate-x-[-50%] translate-y-[-50%]"/>
+          
+
           <div className="flex w-full  items-center bg-[#2F2F2F]   absolute bottom-0 max-lg:h-[3rem] h-[4rem] ">
             <div className="flex w-[50%] max-lg:w-[50%] space-x-5 max-[321px]:space-x-1 max-[426px]:space-x-2 p-5 max-lg:p-2 items-center">
               <div className="flex w-fit" >

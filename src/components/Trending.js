@@ -7,7 +7,8 @@ import one_piece from "../assets/animes/one_piece.jpg";
 import am_i_strongest from "../assets/animes/am_i_strongest.jpg";
 import zom from "../assets/animes/zom.jpg";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
-function Trending() {
+import { Link } from "react-router-dom";
+function Trending(props) {
   function left() {
     let elem = document.getElementById("trending");
     elem.scrollLeft -= 50;
@@ -32,117 +33,170 @@ function Trending() {
         id="trending"
         className=" overflow-x-scroll scroll-none h-full w-full flex items-center px-5  space-x-10  "
       >
-        <div onClick={()=>{alert("this section is not working try below one!")}} className="flex flex-col capitalize bg-[#2F2F2F] shrink-0 w-[13rem]  h-[21.5rem] max-[426px]:w-[11rem] max-[426px]:h-[18.7rem] overflow-hidden rounded-sm hover:scale-105 duration-100 justify-center items-center">
+     <Link to='/Player'>
+
+        <div
+        
+          className="flex flex-col capitalize bg-[#2F2F2F] shrink-0 w-[13rem]  h-[21.5rem] max-[426px]:w-[11rem] max-[426px]:h-[18.7rem] overflow-hidden rounded-sm hover:scale-105 duration-100 justify-center items-center"
+        >
           <img
             alt="anime"
             className=" w-full object-cover  h-full "
             src={Mushoku}
           />
           <div className=" flex  h-fit w-fit  items-center ">
-            <h2 className=" text-[1rem] lato h-fit capitalize  w-max ">
+            <h2 className=" text-[1rem] lato h-fit capitalize max-[426px]:text-[0.8rem]  w-max ">
               Mushoku Tensei
             </h2>
-            <h1 className="text-[2rem] text-[#C90000] p-2">01</h1>
+            <h1 className=" max-[426px]:text-[1.3rem] text-[2rem] text-[#C90000] p-2">
+              01
+            </h1>
           </div>
         </div>
+        </Link>
 
-        <div onClick={()=>{alert("this section is not working try below one!")}} className="flex flex-col capitalize bg-[#2F2F2F] shrink-0 w-[13rem]  h-[21.5rem] max-[426px]:w-[11rem] max-[426px]:h-[18.7rem] overflow-hidden rounded-sm hover:scale-105 duration-100 justify-center items-center ">
+     <Link to='/Player'>
+     <div onClick={props.zom}
+          className="flex flex-col capitalize bg-[#2F2F2F] shrink-0 w-[13rem]  h-[21.5rem] max-[426px]:w-[11rem] max-[426px]:h-[18.7rem] overflow-hidden rounded-sm hover:scale-105 duration-100 justify-center items-center "
+        >
           <img
             alt="anime"
             className=" w-full object-cover  h-full "
             src={zom}
           />
           <div className=" flex  h-fit w-fit  items-center ">
-            <h2 className=" text-[1rem] lato h-fit capitalize  w-max ">
+            <h2 className=" text-[1rem] lato h-fit capitalize max-[426px]:text-[0.8rem]  w-max ">
               Zom 100: Bucket Lis...
             </h2>
-            <h1 className="text-[2rem] text-[#C90000] p-2">02</h1>
+            <h1 className=" max-[426px]:text-[1.3rem] text-[2rem] text-[#C90000] p-2">
+              02
+            </h1>
           </div>
         </div>
 
-        <div onClick={()=>{alert("this section is not working try below one!")}} className="flex flex-col capitalize bg-[#2F2F2F] shrink-0 w-[13rem]  h-[21.5rem] max-[426px]:w-[11rem] max-[426px]:h-[18.7rem] overflow-hidden rounded-sm hover:scale-105 duration-100 justify-center items-center ">
+     </Link>
+     <Link to='/Player'>
+        <div
+        
+          className="flex flex-col capitalize bg-[#2F2F2F] shrink-0 w-[13rem]  h-[21.5rem] max-[426px]:w-[11rem] max-[426px]:h-[18.7rem] overflow-hidden rounded-sm hover:scale-105 duration-100 justify-center items-center "
+        >
           <img
             alt="anime"
             className=" w-full object-cover  h-full "
             src={JUJUTSU}
           />
           <div className=" flex  h-fit w-fit  items-center ">
-            <h2 className=" text-[1rem] lato h-fit capitalize  w-max ">
+            <h2 className=" text-[1rem] lato h-fit capitalize max-[426px]:text-[0.8rem]  w-max ">
               JUJUTSU KAISEN Se...
             </h2>
-            <h1 className="text-[2rem] text-[#C90000] p-2">03</h1>
+            <h1 className=" max-[426px]:text-[1.3rem] text-[2rem] text-[#C90000]  p-2">
+              03
+            </h1>
           </div>
         </div>
+     </Link>
 
-        <div onClick={()=>{alert("this section is not working try below one!")}} className="flex flex-col capitalize bg-[#2F2F2F] shrink-0 w-[13rem]  h-[21.5rem] max-[426px]:w-[11rem] max-[426px]:h-[18.7rem] overflow-hidden rounded-sm hover:scale-105 duration-100 justify-center items-center ">
+        <Link to='/Player'>
+        <div
+        
+          className="flex flex-col capitalize bg-[#2F2F2F] shrink-0 w-[13rem]  h-[21.5rem] max-[426px]:w-[11rem] max-[426px]:h-[18.7rem] overflow-hidden rounded-sm hover:scale-105 duration-100 justify-center items-center "
+        >
           <img
             alt="anime"
             className=" w-full object-cover  h-full "
             src={bleach}
           />
           <div className=" flex  h-fit w-fit  items-center ">
-            <h2 className=" text-[1rem] lato h-fit capitalize  w-max ">
+            <h2 className=" text-[1rem] lato h-fit capitalize max-[426px]:text-[0.8rem]  w-max ">
               BLEACH: Thousa...
             </h2>
-            <h1 className="text-[2rem] text-[#C90000] p-2">04</h1>
+            <h1 className=" max-[426px]:text-[1.3rem] text-[2rem] text-[#C90000] p-2">
+              04
+            </h1>
           </div>
         </div>
+     </Link>
 
-        <div onClick={()=>{alert("this section is not working try below one!")}} className="flex flex-col capitalize bg-[#2F2F2F] shrink-0 w-[13rem]  h-[21.5rem] max-[426px]:w-[11rem] max-[426px]:h-[18.7rem] overflow-hidden rounded-sm hover:scale-105 duration-100 justify-center items-center">
+        <Link to='/Player'>
+        <div onClick={props.sweetRein}
+        
+          className="flex flex-col capitalize bg-[#2F2F2F] shrink-0 w-[13rem]  h-[21.5rem] max-[426px]:w-[11rem] max-[426px]:h-[18.7rem] overflow-hidden rounded-sm hover:scale-105 duration-100 justify-center items-center"
+        >
           <img
             alt="anime"
             className=" w-full object-cover  h-full "
             src={sweetReincarnation}
           />
           <div className=" flex  h-fit w-fit  items-center ">
-            <h2 className=" text-[1rem] lato h-fit capitalize  w-max ">
+            <h2 className=" text-[1rem] lato h-fit capitalize max-[426px]:text-[0.8rem]  w-max ">
               Sweet Reincarnation
             </h2>
-            <h1 className="text-[2rem] text-[#C90000] p-2">05</h1>
+            <h1 className=" max-[426px]:text-[1.3rem] text-[2rem] text-[#C90000] p-2">
+              05
+            </h1>
           </div>
         </div>
-
-        <div onClick={()=>{alert("this section is not working try below one!")}} className="flex flex-col capitalize bg-[#2F2F2F] shrink-0 w-[13rem]  h-[21.5rem] max-[426px]:w-[11rem] max-[426px]:h-[18.7rem] overflow-hidden rounded-sm hover:scale-105 duration-100 justify-center items-center">
+        </Link>
+        <Link to='/Player'>
+        <div
+        
+          className="flex flex-col capitalize bg-[#2F2F2F] shrink-0 w-[13rem]  h-[21.5rem] max-[426px]:w-[11rem] max-[426px]:h-[18.7rem] overflow-hidden rounded-sm hover:scale-105 duration-100 justify-center items-center"
+        >
           <img
             alt="anime"
             className=" w-full object-cover  h-full "
             src={Hunter}
           />
           <div className=" flex  h-fit w-fit  items-center ">
-            <h2 className=" text-[1rem] lato h-fit capitalize  w-max ">
+            <h2 className=" text-[1rem] lato h-fit capitalize max-[426px]:text-[0.8rem]  w-max ">
               hunter X hunter
             </h2>
-            <h1 className="text-[2rem] text-[#C90000] p-2">06</h1>
+            <h1 className=" max-[426px]:text-[1.3rem] text-[2rem] text-[#C90000] p-2">
+              06
+            </h1>
           </div>
         </div>
-
-        <div onClick={()=>{alert("this section is not working try below one!")}} className="flex flex-col capitalize bg-[#2F2F2F] shrink-0 w-[13rem]  h-[21.5rem] max-[426px]:w-[11rem] max-[426px]:h-[18.7rem] overflow-hidden rounded-sm hover:scale-105 duration-100 justify-center items-center">
+</Link>
+<Link to='/Player'>
+        <div
+        
+          className="flex flex-col capitalize bg-[#2F2F2F] shrink-0 w-[13rem]  h-[21.5rem] max-[426px]:w-[11rem] max-[426px]:h-[18.7rem] overflow-hidden rounded-sm hover:scale-105 duration-100 justify-center items-center"
+        >
           <img
             alt="anime"
             className=" w-full object-cover  h-full "
             src={am_i_strongest}
           />
           <div className=" flex  h-fit w-fit  items-center ">
-            <h2 className=" text-[1rem] lato h-fit capitalize  w-max ">
+            <h2 className=" text-[1rem] lato h-fit capitalize max-[426px]:text-[0.8rem]  w-max ">
               Am I Actually the S...
             </h2>
-            <h1 className="text-[2rem] text-[#C90000] p-2">07</h1>
+            <h1 className=" max-[426px]:text-[1.3rem] text-[2rem] text-[#C90000] p-2">
+              07
+            </h1>
           </div>
         </div>
-
-        <div onClick={()=>{alert("this section is not working try below one!")}} className="flex flex-col capitalize bg-[#2F2F2F] shrink-0 w-[13rem]  h-[21.5rem] max-[426px]:w-[11rem] max-[426px]:h-[18.7rem] overflow-hidden rounded-sm hover:scale-105 duration-100 justify-center items-center">
+        </Link>
+        <Link to='/Player'>
+        <div
+        
+          className="flex flex-col capitalize bg-[#2F2F2F] shrink-0 w-[13rem]  h-[21.5rem] max-[426px]:w-[11rem] max-[426px]:h-[18.7rem] overflow-hidden rounded-sm hover:scale-105 duration-100 justify-center items-center"
+        >
           <img
             alt="anime"
             className=" w-full object-cover  h-full "
             src={one_piece}
           />
           <div className=" flex  h-fit w-fit  items-center ">
-            <h2 className=" text-[1rem] lato h-fit capitalize  w-max ">
+            <h2 className=" text-[1rem] lato h-fit capitalize max-[426px]:text-[0.8rem]  w-max ">
               One peice
             </h2>
-            <h1 className="text-[2rem] text-[#C90000] p-2">08</h1>
+            <h1 className=" max-[426px]:text-[1.3rem] text-[2rem] text-[#C90000] p-2">
+              08
+            </h1>
           </div>
         </div>
+        </Link>
       </div>
       <button
         onClick={right}

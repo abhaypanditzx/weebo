@@ -8,7 +8,10 @@ function Home(props) {
   return (
     <div className="-mt-14 h-full ">
       <Slider />
-      <Trending />
+      <Trending 
+        zom={props.zom}  
+        sweetRein={props.sweetRein}
+        />
       <Recently
         ayakashi={props.ayakashi}
         zom={props.zom}
@@ -20,7 +23,7 @@ function Home(props) {
         akuma ={props.akuma}
         />
         <AnimeTypes/>
-        <div className="flex max-sm:flex-col justify-around w-full  items-center">
+        <div className="flex max-sm:flex-col h-fit p-5 justify-around w-full  items-center">
         <MostViewed/>
         <Genre/>
         </div>
