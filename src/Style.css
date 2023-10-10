@@ -55,9 +55,8 @@
 .scroll-none::-webkit-scrollbar {
   display: none;
 }
-.bg-img{
+
+.bg-img {
   background: rgb(0,0,0);
-  background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(42,42,42,0.9865196078431373) 100%);
-
-
+  background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(22,22,22,1) 100%);
 }

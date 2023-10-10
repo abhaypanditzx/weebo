@@ -4,134 +4,198 @@ import {
   FaForward,
   FaMicrophoneAlt,
   FaPlay,
-  FaPause
+  FaPause,
 } from "react-icons/fa";
+import sampleVideo from "../assets/samplevideos/Chainsaw Man - S1E08 (82).mp4"
 import Comments from "../components/Comments";
 import RelatedAnime from "../components/RelatedAnime";
-import { useState } from "react";
+
 
 function Player(props) {
-const handelOnPlay =()=>{
-   let play =  document.getElementById("play");
-   let pause = document.getElementById("pause");
-   pause.style.display = "block"
-   play.style.display = "none"
-   
-}
-const handelOnPause =()=>{
-  let play =  document.getElementById("play");
-  let pause = document.getElementById("pause");
-  pause.style.display = "none"
-  play.style.display = "block"
 
-}
+  const handelOnPlay = () => {
+    let play = document.getElementById("play");
+    let video = document.getElementById("video");
+    let pause = document.getElementById("pause");
+    if(video.paused|| video.ended){
+      pause.style.display = "block";
+      video.play();
+      play.style.display = "none";
+    }
+    else{
+          
+    pause.style.display = "none";
+    play.style.display = "block";
+    video.pause()
+    }
+
+  };
+  
+  const handelOnBackward =()=>{
+    let video = document.getElementById("video");
+    video.currentTime -=5;
+  }
+  const handelOnForward =()=>{
+    let video = document.getElementById("video");
+    video.currentTime +=5;
+
+  }
+  const handelOnExpand =()=>{
+    let video = document.getElementById("video");
+video.requestFullscreen()
+  }
   return (
-    
-<div className="h-full space-y-10 w-full    ">
-<div className=" max-lg:space-y-5 p-5 bg-[#171717] space-y-0 h-fit max-lg:h-[100%] max-lg:p-10 max-[426px]:h-[100%] max-lg:flex-col flex-row  w-full flex text-white items-center max-[426px]:justify-normal justify-around">
-{/* ABOUT SERIES */}
+    <div className="h-full space-y-10 w-full    ">
+      <div className=" max-lg:space-y-5 p-5 bg-[#171717] space-y-0 h-fit max-lg:h-[100%] max-lg:p-10 max-[426px]:h-[100%] max-lg:flex-col flex-row  w-full flex text-white items-center max-[426px]:justify-normal justify-around">
+        {/* ABOUT SERIES */}
         <div className="bg-[#111111]  h-[100%]  max-[321px]:w-[18rem]  max-lg:w-[40rem] max-[426px]:w-[20rem]  max-sm:w-[28rem]  w-[20rem]">
           <div className="w-full h-fit p-4">
-            <img  alt="img"  className="h-[8rem] max-lg:h-[6rem]" src={props.AnimeImg} />
+            <img
+              alt="img"
+              className="h-[8rem] max-lg:h-[6rem]"
+              src={props.AnimeImg}
+            />
             <h5 className="capitalize lato max-[426px]:text-[0.8rem] text-[1.5rem] my-1">
-              { props.name }
+              {props.name}
             </h5>
             <h5 className="text-[0.75rem] max-[426px]:text-[0.6rem]   font-extralight">
-            {props.about}
+              {props.about}
             </h5>
           </div>
           <div className="w-full  p-5">
             <div>
-              <span className=" text-[0.8rem] max-[426px]:text-[0.65rem] text-[#A0A0A0]" >Type:</span>
-              <span className=" max-[426px]:text-[0.65rem] text-[0.9rem] p-1 text-[#fff]">TV</span>
+              <span className=" text-[0.8rem] max-[426px]:text-[0.65rem] text-[#A0A0A0]">
+                Type:
+              </span>
+              <span className=" max-[426px]:text-[0.65rem] text-[0.9rem] p-1 text-[#fff]">
+                TV
+              </span>
             </div>
             <div>
-              <span className=" text-[0.8rem] max-[426px]:text-[0.65rem] text-[#A0A0A0]" >Status:</span>
-              <span className=" max-[426px]:text-[0.65rem] text-[0.9rem] p-1 text-[#fff]">{props.status} </span>
+              <span className=" text-[0.8rem] max-[426px]:text-[0.65rem] text-[#A0A0A0]">
+                Status:
+              </span>
+              <span className=" max-[426px]:text-[0.65rem] text-[0.9rem] p-1 text-[#fff]">
+                {props.status}{" "}
+              </span>
             </div>
             <div>
-              <span className=" text-[0.8rem] max-[426px]:text-[0.65rem] text-[#A0A0A0]" >Genres:</span>
-              <span className=" max-[426px]:text-[0.65rem] text-[0.9rem] p-1 text-[#fff]">{props.Genres}</span>
+              <span className=" text-[0.8rem] max-[426px]:text-[0.65rem] text-[#A0A0A0]">
+                Genres:
+              </span>
+              <span className=" max-[426px]:text-[0.65rem] text-[0.9rem] p-1 text-[#fff]">
+                {props.Genres}
+              </span>
             </div>
             <div>
-              <span className=" text-[0.8rem] max-[426px]:text-[0.65rem] text-[#A0A0A0]" >Country: </span>
-              <span className=" max-[426px]:text-[0.65rem] text-[0.9rem] p-1 text-[#fff]">{props.Country}</span>
+              <span className=" text-[0.8rem] max-[426px]:text-[0.65rem] text-[#A0A0A0]">
+                Country:{" "}
+              </span>
+              <span className=" max-[426px]:text-[0.65rem] text-[0.9rem] p-1 text-[#fff]">
+                {props.Country}
+              </span>
             </div>
             <div>
-              <span className=" text-[0.8rem] max-[426px]:text-[0.65rem] text-[#A0A0A0]" >Premiered:</span> 
-              <span className=" max-[426px]:text-[0.65rem] text-[0.9rem] p-1 text-[#fff]">{props.Premiered}</span>
+              <span className=" text-[0.8rem] max-[426px]:text-[0.65rem] text-[#A0A0A0]">
+                Premiered:
+              </span>
+              <span className=" max-[426px]:text-[0.65rem] text-[0.9rem] p-1 text-[#fff]">
+                {props.Premiered}
+              </span>
             </div>
             <div>
-              <span className=" text-[0.8rem] max-[426px]:text-[0.65rem] text-[#A0A0A0]" >TV Date aired:</span>
-              <span className=" max-[426px]:text-[0.65rem] text-[0.9rem] p-1 text-[#fff]">{props.aired}</span>
+              <span className=" text-[0.8rem] max-[426px]:text-[0.65rem] text-[#A0A0A0]">
+                TV Date aired:
+              </span>
+              <span className=" max-[426px]:text-[0.65rem] text-[0.9rem] p-1 text-[#fff]">
+                {props.aired}
+              </span>
             </div>
             <div>
-              <span className=" text-[0.8rem] max-[426px]:text-[0.65rem] text-[#A0A0A0]" > Producers:</span>
-              <span className=" max-[426px]:text-[0.65rem] text-[0.9rem] p-1 text-[#fff]">{props.Producers}</span>
+              <span className=" text-[0.8rem] max-[426px]:text-[0.65rem] text-[#A0A0A0]">
+                {" "}
+                Producers:
+              </span>
+              <span className=" max-[426px]:text-[0.65rem] text-[0.9rem] p-1 text-[#fff]">
+                {props.Producers}
+              </span>
             </div>
             <div>
-              <span className=" text-[0.8rem] max-[426px]:text-[0.65rem] text-[#A0A0A0]" > Episodes: </span>
-              <span className=" max-[426px]:text-[0.65rem] text-[0.9rem] p-1 text-[#fff]">{props.Episodes}</span>
+              <span className=" text-[0.8rem] max-[426px]:text-[0.65rem] text-[#A0A0A0]">
+                {" "}
+                Episodes:{" "}
+              </span>
+              <span className=" max-[426px]:text-[0.65rem] text-[0.9rem] p-1 text-[#fff]">
+                {props.Episodes}
+              </span>
             </div>
             <div>
-              <span className=" text-[0.8rem] max-[426px]:text-[0.65rem] text-[#A0A0A0]" >Studios: </span>
-              <span className=" max-[426px]:text-[0.65rem] text-[0.9rem] p-1 text-[#fff]"> {props.Studios}</span>
+              <span className=" text-[0.8rem] max-[426px]:text-[0.65rem] text-[#A0A0A0]">
+                Studios:{" "}
+              </span>
+              <span className=" max-[426px]:text-[0.65rem] text-[0.9rem] p-1 text-[#fff]">
+                {" "}
+                {props.Studios}
+              </span>
             </div>
           </div>
         </div>
-{/* VIDEO Player */}
+        {/* VIDEO Player */}
 
-<div className="bg-[#111111] h-[30rem] flex-col  w-[50rem] max-[426px]:h-[15rem] max-[321px]:w-[18rem]  max-sm:w-[28rem] max-lg:h-[25rem] max-lg:w-[40rem]  max-[426px]:w-[20rem] relative  flex">
-          <FaPlay  onClick={handelOnPlay} id="play"  className="w-[4rem] cursor-pointer max-lg:h-[3rem] max-lg:w-[3rem] hover:text-gray-200 h-[4rem]  absolute top-[50%]  left-[50%] translate-x-[-50%] translate-y-[-50%]"/>
-          <FaPause onClick={handelOnPause} id="pause" className="w-[4rem] cursor-pointer hidden max-lg:h-[3rem] max-lg:w-[3rem] hover:text-gray-200 h-[4rem]  absolute top-[50%]  left-[50%] translate-x-[-50%] translate-y-[-50%]"/>
-          
+        <div className="bg-[#111111] h-[30rem] flex-col  w-[50rem] max-[426px]:h-[15rem] max-[321px]:w-[18rem]  max-sm:w-[28rem] max-lg:h-[25rem] max-lg:w-[40rem]  max-[426px]:w-[20rem] relative  flex">
+          <video id="video" className="w-full h-full">
+            <source src={sampleVideo}/>
+          </video>
+<button onClick={handelOnPlay}>
+<FaPlay
+            // onClick={handelOnPlay}
+            id="play"
+            className="w-[4rem] cursor-pointer max-lg:h-[3rem] max-lg:w-[3rem] hover:text-gray-200 h-[4rem]  absolute top-[50%]  left-[50%] translate-x-[-50%] translate-y-[-50%]"
+          />
+          <FaPause
+            // onClick={handelOnPause}
+            id="pause"
+            className="w-[4rem]  hidden max-lg:h-[3rem] max-lg:w-[3rem] hover:text-gray-200 cursor-pointer h-[4rem]  absolute top-[50%]  left-[50%] translate-x-[-50%] translate-y-[-50%]"
+          />
+</button>
 
           <div className="flex w-full  items-center bg-[#2F2F2F]   absolute bottom-0 max-lg:h-[3rem] h-[4rem] ">
             <div className="flex w-[50%] max-lg:w-[50%] space-x-5 max-[321px]:space-x-1 max-[426px]:space-x-2 p-5 max-lg:p-2 items-center">
-              <div className="flex w-fit" >
+              <div className="flex w-fit">
                 <p className="text-[#C0C0C0] capitalize  w-max max-[426px]:text-[0.6rem]  ext-[0.9rem] font-semibold">
                   current episode :
-                </p >
+                </p>
                 <span className="text-white  text-[0.9rem] max-[426px]:text-[0.6rem]   ml-2">
                   2
                 </span>
               </div>
               <div className="flex capitalize items-center ">
                 <p>
-                  
-                  <FaMicrophoneAlt className="text-[#C90000] max-[426px]:text-[0.65rem]" />
+                  <FaMicrophoneAlt  className="text-[#C90000] max-[426px]:text-[0.65rem]" />
                 </p>
                 <span className="text-[0.7rem] max-[426px]:text-[0.6rem] ">
-                  
                   dub
                 </span>
               </div>
-              <div className="flex items-center" >
+              <div className="flex items-center">
                 <p className="text-[#C0C0C0] capitalize max-[426px]:text-[0.6rem] w-max text-[0.9rem] font-semibold ">
                   duration :
                 </p>
                 <span className="text-white text-[0.7rem] max-[426px]:text-[0.6rem]  w-max  mt-[0.2rem] p-1">
-                  
                   24 min
                 </span>
               </div>
             </div>
             <div className="flex w-[50%] justify-end space-x-10 max-lg:space-x-5 px-2  items-center">
               <div className="flex space-x-3">
-                <FaBackward className="h-5 max-[426px]:h-3 max-[426px]:w-3 w-5" />
-                <FaForward className="h-5 max-[426px]:h-3 max-[426px]:w-3 w-5" />
+                <FaBackward onClick={handelOnBackward} className="h-5 hover:text-gray-200 cursor-pointer max-[426px]:h-3 max-[426px]:w-3 w-5" />
+                <FaForward  onClick={handelOnForward}  className="h-5 hover:text-gray-200 cursor-pointer max-[426px]:h-3 max-[426px]:w-3 w-5" />
               </div>
-              <FaExpand className="h-6 w-6 max-[426px]:h-3 max-[426px]:w-3 w" />
+              <FaExpand onClick={handelOnExpand} className="h-6 w-6 hover:text-gray-200 cursor-pointer max-[426px]:h-3 max-[426px]:w-3 w" />
             </div>
           </div>
-       
-</div>
-{/* EPISODES */}
-        {/* <div className="flex  space-x-4 w-full justify-center p-4">
-  <div className=" bg-[#a50000] rounded-lg w-[10rem] max-lg:w-[7rem] max-lg:h-[2.5rem] max-[426px]:w-[4rem] max-[426px]:text-[0.8rem] max-[426px]:text-[0.65rem] max-[426px]:h-[1.5rem]  h-[3rem] flex justify-center items-center cursor-pointer inter tracking-wider hover:bg-[#820303] text-white "> season </div>
-  <div className=" bg-[#a50000] rounded-lg w-[10rem] max-lg:w-[7rem] max-lg:h-[2.5rem] max-[426px]:w-[4rem] max-[426px]:text-[0.8rem] max-[426px]:text-[0.65rem] max-[426px]:h-[1.5rem]  h-[3rem] flex justify-center items-center cursor-pointer inter tracking-wider hover:bg-[#820303] text-white "> season </div>
-  <div className=" bg-[#a50000] rounded-lg w-[10rem] max-lg:w-[7rem] max-lg:h-[2.5rem] max-[426px]:w-[4rem] max-[426px]:text-[0.8rem] max-[426px]:text-[0.65rem] max-[426px]:h-[1.5rem]  h-[3rem] flex justify-center items-center cursor-pointer inter tracking-wider hover:bg-[#820303] text-white "> season </div>
-</div> */}
+        </div>
+        {/* EPISODES */}
         <div className="bg-[#111111] p-4   h-[30rem]  max-lg:h-[25rem] max-[321px]:w-[18rem] max-sm:w-[28rem] max-[426px]:w-[20rem] max-lg:w-[30rem]  w-[20rem]">
           <div className="parent">
             <h4 className="text-sm lato ">List of episodes :</h4>
@@ -231,18 +295,12 @@ const handelOnPause =()=>{
             </span>
           </div>
         </div>
-
       </div>
-      {/* SEASONS */}
-<div className='text-white flex justify-around items-center max-lg:justify-normal max-lg:space-y-10 max-lg:flex-col flex-row  bg-[#171717] h-full p-5 w-full'>
-
-<Comments/>
-<RelatedAnime/>
-</div>
-</div>
-
-
-
+      <div className="text-white flex justify-around items-center max-lg:justify-normal max-lg:space-y-10 max-lg:flex-col flex-row  bg-[#171717] h-full p-5 w-full">
+        <Comments />
+        <RelatedAnime />
+      </div>
+    </div>
   );
 }
 export default Player;

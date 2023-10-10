@@ -3,10 +3,12 @@ import React from 'react';
 function Genre() {
 
   return (
-    <div className='w-fit  flex justify-center items-center'>
+    <div className='w-fit mt-[2rem]   h-fit items-center'>
+       <div  className='h-fit w-full text-[#d70d0d] drop-shadow-sm capitalize text-[1.4rem] bg-[#2f2f2f] py-3 flex justify-start px-5 items-center lato'>
+       genre
+       </div>
        
-       
-        <ul className={` flex-wrap shadowInner rounded-sm mt-[2rem] items-center justify-start w-[19rem] flex bg-[#171717] `}>
+        <ul className={` flex-wrap shadowInner rounded-sm  items-center justify-start w-[19rem] flex bg-[#171717] `}>
             <li className=' bg-[#2f2f2f] max-[321px]:text-[0.8rem] max-[426px]:text-[0.86rem] m-2 w-fit h-fit p-1 rounded-md text-white'> Action</li>
             <li className=' bg-[#2f2f2f] max-[321px]:text-[0.8rem] max-[426px]:text-[0.86rem] m-2 w-fit h-fit p-1 rounded-md text-white'> Adventure</li>
             <li className=' bg-[#2f2f2f] max-[321px]:text-[0.8rem] max-[426px]:text-[0.86rem] m-2 w-fit h-fit p-1 rounded-md text-white'> Avant Garde</li>
